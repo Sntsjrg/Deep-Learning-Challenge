@@ -1,0 +1,30 @@
+Neural Network Model
+Overview of the Analysis:  The purpose of this analysis is to create a deep learning model using TensorFlow/Keras for Alphabet Soup, a nonprofit foundation. The goal is to predict the success of organizations funded by Alphabet Soup based on various features available in the dataset. 
+
+Results: 
+
+•	Data Preprocessing:
+
+1.	What variable(s) are the target(s) for your model? 
+	IS_SUCCESSFUL: Binary variable indicating whether the funding was successful
+
+2.	What variable(s) are the features for your model?
+	There are 9 features such as APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS,  INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT
+
+3.	What variable(s) should be removed from the input data because they are neither targets nor features?
+	EIN and NAME columns were removed as they do not contribute to the prediction
+
+•	Compiling, Training, and Evaluating the Model:
+
+1.	How many neurons, layers, and activation functions did you select for your neural network model, and why?
+	Two hidden layers with 8 and 5 neurons, respectively, using activation function relu.
+	Output layer with 1 neuron and a sigmoid activation function for binary classification
+
+2.	Were you able to achieve the target model performance?
+	Model performance metrics (accuracy, loss) achieved during training and evaluation were Loss: 0.5936362147331238(59%), Accuracy: 0.6255393624305725(62%)
+
+3.	What steps did you take in your attempts to increase model performance?
+	Modified the number of neurons and layers for optimization and also the number of epochs
+
+Summary:
+The deep learning model achieved an accuracy of 79% in predicting Alphabet Soup-funded organizations’ success after optimizing the code and can probably achieve higher accuracy by adding more neurons or layers and maybe refining the data to exclude data that may not be necessary.
